@@ -4,7 +4,7 @@ options:
     worldName: sky-1
     spawnSize: 160
     cooldownInfo: 10
-    cooldownRestart: 604800
+    cooldownRestart: 86400
     biomeChange: 3600
   island:
     schematicName: skyinsel-2
@@ -606,10 +606,11 @@ options:
         repeatCurrencyReward: 20
         repeatXpReward: 20
       skylord:
-        description: Erreiche das Island hoechst level von 1000
+        description: Erreiche das Island Level von 1000
         rankLevel: Master
         type: islandLevel
         requiredItems: 1000
+        resetInHours: 1
         takeItems: false
         itemReward: 264:64 120:12 381:12 138:1 384:256
         rewardText: '64 Diamanten, 1 Leuchtfeuer, 4 stacks EXP Flaschen, 12 Endportalrahmen, 12 Enderaugen (Endrahmen NUR einmal bekommbar) , &eTitle: &a[&2SkyLord&4+&a]&f'
@@ -621,16 +622,202 @@ options:
         repeatRewardText: ''
         repeatCurrencyReward: 0
         repeatXpReward: 0
-      ultimateskylord:
-        description: Erreiche das Island hoechst level von XXXXXX
+      stonebuilder:
+        description: kommt mit 1.8 !!!
+        rankLevel: Master
+        type: onIsland
+        requiredItems: 7:1 1:10 4:10 44:10 44:1:10 44:3:10 44:4:10 44:5:10 44:6:10 44:7:10 67:10 98:10 98:1:10 98:2:10 98:3:10 108:10 109:10 12:10 12:1:10 13:10 24:10 24:1:10 24:2:10 87:10 112:10 113:10 114:10 139:10 139:1:10 153:10 155:10 155:1:10 155:2:10 156:10
+        resetInHours: 1
+        takeItems: false
+        itemReward: 1:1
+        rewardText: T
+        currencyReward: 1000
+        xpReward: 10000
+        permissionReward: none
+        repeatable: false
+        repeatItemReward: ''
+        repeatRewardText: ''
+        repeatCurrencyReward: 0
+        repeatXpReward: 0
+      lagermessie:
+        description: Sammel 10 stacks Redstonekisten, Endertruhen und je 6 stacks Kisten und Buecherregale !
+        rankLevel: Master
+        type: onPlayer
+        requiredItems: 146:640 130:640 54:384 47:384
+        resetInHours: 1
+        takeItems: true
+        itemReward: 20:1920
+        rewardText: Du bekommst 30 stacks Glas.
+        currencyReward: 1000
+        xpReward: 10000
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: 20:1920
+        repeatRewardText: Du bekommst 30 stacks Glas.
+        repeatCurrencyReward: 500
+        repeatXpReward: 10000
+      holzwurm:
+        description: Sammel je 6 stacks aller Setzling Arten und 4 stacks Erde! Zusaetzlich 4 stacks Aepfel, je 2 Diamantaxt/Diamantschaufel und 1 stack Kisten!
+        rankLevel: Master
+        type: onPlayer
+        requiredItems: 6:384 6:1:384 6:2:384 6:3:384 6:4:384 6:5:384 2:256 260:256 277:2 279:2 54:64
+        resetInHours: 1
+        takeItems: true
+        itemReward: 37:128 38:128 38:1:128 38:2.128 38:3:128 38:4:128 38:5:128 38:6:128 38:7:128 38:8:128 39:128 40:128 277:4 293:4
+        rewardText: je 2 stacks von allen Blumen (Teil 1) + je 2 stacks von beiden Pilzen und 4 Diamandschaufeln + 4 Diamandhacken
+        currencyReward: 2000
+        xpReward: 40000
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: 37:128 38:128 38:1:128 38:2.128 38:3:128 38:4:128 38:5:128 38:6:128 38:7:128 38:8:128 39:128 40:128 277:4 293:4
+        repeatRewardText: je 2 stacks von allen Blumen (Teil 1) + je 2 stacks von beiden Pilzen und 4 Diamandschaufeln + 4 Diamandhacken
+        repeatCurrencyReward: 2000
+        repeatXpReward: 20000
+      funyfarmer:
+        description: Sammel je 10 stacks Kuerbiskuchen, Magmacreme und Obsidian !
+        rankLevel: Master
+        type: onPlayer
+        requiredItems: 400:640 378:640 49:640
+        resetInHours: 1
+        takeItems: true
+        itemReward: 175:128 175:1:128 175:2:128 175:3:128 175:4:128 175:5:128 277:4 293:4
+        rewardText: je 2 stacks Sonnenblume, Flieder, Hohes u. Großes Gras, Rosenstrauch und Pfingstrose und 4 Diamandschaufeln + 4 Diamandhacken!
+        currencyReward: 3000
+        xpReward: 50000
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: 175:128 175:1:128 175:2:128 175:3:128 175:4:128 175:5:128 277:4 293:4
+        repeatRewardText: je 2 stacks Sonnenblume, Flieder, Hohes u. Großes Gras, Rosenstrauch und Pfingstrose und 4 Diamandschaufeln + 4 Diamandhacken!
+        repeatCurrencyReward: 2000
+        repeatXpReward: 25000
+      endstone:
+        description: Sammel 30 stacks Endstein und 2 Diamantspitzhacken !
+        rankLevel: Master
+        type: onPlayer
+        requiredItems: 121:1920 278:2
+        resetInHours: 1
+        takeItems: true
+        itemReward: 79:640 174:640 82:640
+        rewardText: 10 stacks Eis 10 stacks Packeis 10 stacks Ton.
+        currencyReward: 2000
+        xpReward: 40000
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: 79:640 174:640 82:640
+        repeatRewardText: 10 stacks Eis 10 stacks Packeis 10 stacks Ton.
+        repeatCurrencyReward: 2000
+        repeatXpReward: 20000
+      farmguru:
+        description: Erreiche das Island level von 10000
         rankLevel: Master
         type: islandLevel
-        requiredItems: 999999
+        requiredItems: 10000
         takeItems: false
-        itemReward:
-        rewardText:
+        itemReward: 1:1
+        rewardText: Glueckwunsch, du gehörst zu den oberen Kreis der Verrueckten ;-)
+        currencyReward: 5000
+        xpReward: 50000
+        permissionReward: none
+        repeatable: false
+        repeatItemReward: ''
+        repeatRewardText: ''
+        repeatCurrencyReward: 0
+        repeatXpReward: 0
+      diamandgier:
+        description: Sammel 30 stacks (1920) Diamanten und 4 Diamantspitzhacken !
+        rankLevel: Master
+        type: onPlayer
+        requiredItems: 57:1920 278:4
+        resetInHours: 1
+        takeItems: true
+        itemReward: 1:1
+        rewardText: T
+        currencyReward: 5000
+        xpReward: 100000
+        permissionReward: none
+        repeatable: false
+        repeatItemReward: ''
+        repeatRewardText: ''
+        repeatCurrencyReward: 5000
+        repeatXpReward: 100000
+      emeraldmaster:
+        description: Sammel 30 stacks Emeraldbloecke und 2 Diamandspitzhacken !
+        rankLevel: Master
+        type: onPlayer
+        requiredItems: 133:1920 278:2
+        resetInHours: 1
+        takeItems: true
+        itemReward: 1:1
+        rewardText: T
+        currencyReward: 5000
+        xpReward: 200000
+        permissionReward: none
+        repeatable: false
+        repeatItemReward: ''
+        repeatRewardText: ''
+        repeatCurrencyReward: 5000
+        repeatXpReward: 200000
+      lapisphobie:
+        description: Sammel 30 stacks Lapislazuli-bloecke und 2 Diamandspitzhacken und 1 Werkbank und 1 Ofen!
+        rankLevel: Master
+        type: onPlayer
+        requiredItems: 22:1920 278:2 58:1 61:1
+        resetInHours: 1
+        takeItems: true
+        itemReward: 1:1
+        rewardText: T
+        currencyReward: 5000
+        xpReward: 200000
+        permissionReward: none
+        repeatable: false
+        repeatItemReward: ''
+        repeatRewardText: ''
+        repeatCurrencyReward: 5000
+        repeatXpReward: 200000
+      goldrausch:
+        description: Sammel 30 stacks (1920) Goldbloecke ! JA GOLDBLOECKE ;-) Und sei einer der Verrückten Farmkings ;-)
+        rankLevel: Master
+        type: onPlayer
+        requiredItems: 41:1920
+        resetInHours: 1
+        takeItems: true
+        itemReward: 1:1
+        rewardText: T
+        currencyReward: 5000
+        xpReward: 200000
+        permissionReward: none
+        repeatable: false
+        repeatItemReward: ''
+        repeatRewardText: ''
+        repeatCurrencyReward: 5000
+        repeatXpReward: 200000
+      petriheil:
+        description: Sammel je 10 stacks von Roher Fisch, Roher Lachs, Clownfisch und kugelfisch!
+        rankLevel: Master
+        type: onPlayer
+        requiredItems: 349:640 349:1:640 349:2:640 349:3:640
+        resetInHours: 1
+        takeItems: true
+        itemReward: 1:1
+        rewardText: T
         currencyReward: 5000
         xpReward: 10000
+        permissionReward: none
+        repeatable: false
+        repeatItemReward: ''
+        repeatRewardText: ''
+        repeatCurrencyReward: 0
+        repeatXpReward: 0
+      ultimateskylord:
+        description: Erreiche das Island hoechst level von 50000
+        rankLevel: Master
+        type: islandLevel
+        requiredItems: 50000
+        takeItems: false
+        itemReward:
+        rewardText: Glueckwunsch, du hast es geschafft und bist in den reihen der &eTitel &a[&1UltimateSkyLord´s&4+&a]&f aufgestiegen! Du darfst dich nun damit Ruehmen ;-)
+        currencyReward: 10000
+        xpReward: 500000
         permissionReward: none
         repeatable: false
         repeatItemReward: ''
