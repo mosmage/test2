@@ -1,0 +1,639 @@
+options:
+  general:
+    maxPartySize: 5
+    worldName: sky-1
+    spawnSize: 160
+    cooldownInfo: 10
+    cooldownRestart: 604800
+    biomeChange: 3600
+  island:
+    schematicName: skyinsel-2
+    distance: 160
+    removeCreaturesByTeleport: true
+    height: 120
+    chestItems: 325:1 6:1 362:1 295:1 81:1 327:1 40:1 39:1 361:1 338:1 323:1 331:9 76:2 33:1 364:3 50:3 327:1 12:2 257:1
+    addExtraItems: false
+    extraPermissions:
+      smallbonus: 4:16 320:5
+      mediumbonus: 50:16 327:1
+      largebonus: 3:5 12:5
+      giantbonus: 2:1 110:1
+      extremebonus: 352:8 263:4
+      donorbonus: 261:1 262:32 272:1
+    protectWithWorldGuard: true
+    protectionRange: 150
+    allowPvP: deny
+    allowIslandLock: false
+    useOldIslands: false
+    useIslandLevel: true
+    useTopTen: true
+  extras:
+    sendToSpawn: false
+    obsidianToLava: true
+  challenges:
+    allowChallenges: true
+    broadcastCompletion: true
+    broadcastText: '&6'
+    ranks: Easy Medium Hard Master
+    requirePreviousRank: true
+    rankLeeway: 1
+    defaultResetInHours: 10
+    challengeColor: '&e'
+    finishedColor: '&2'
+    repeatableColor: '&a'
+    enableEconomyPlugin: true
+    challengeList:
+      cobblestonegenerator:
+        description: Erstelle einen Cobblestonegenerator und farme 640 cobblestone.
+        rankLevel: Easy
+        type: onPlayer
+        requiredItems: 4:640
+        resetInHours: 2
+        displayItem: 4
+        takeItems: true
+        itemReward: '334:3'
+        permissionReward: none
+        rewardText: 3 Leder
+        currencyReward: 10
+        xpReward: 30
+        repeatable: true
+        repeatItemReward: '334:1'
+        repeatRewardText: 1 Leder
+        repeatCurrencyReward: 5
+        repeatXpReward: 10
+      applecollector:
+        description: Sammel 4 Aepfel
+        rankLevel: Easy
+        type: onPlayer
+        requiredItems: '260:4'
+        resetInHours: 1
+        displayItem: 260
+        takeItems: true
+        itemReward: 6:0:2 6:1:2 6:2:2 6:3:2 6:4:2 6:5:2
+        rewardText: 2 Baumsaetzlinge von jeder Art.
+        currencyReward: 10
+        xpReward: 30
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: 6:0:1 6:1:1 6:2:1 6:3:1 6:4:1 6:5:1
+        repeatRewardText: 1 Baumsaetzling von jeder Art.
+        repeatCurrencyReward: 5
+        repeatXpReward: 10
+      wheatfarmer:
+        description: Baue eine Weizenfarm und Ernte 128 Weizen.
+        rankLevel: Easy
+        type: onPlayer
+        requiredItems: 296:128
+        resetInHours: 1
+        displayItem: 296
+        takeItems: true
+        itemReward: '3:2'
+        rewardText: 2 Erde
+        currencyReward: 10
+        xpReward: 30
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: '3:1'
+        repeatRewardText: 1 Erde
+        repeatCurrencyReward: 5
+        repeatXpReward: 10
+      cactusfarmer:
+        description: Baue eine Kaktusfarm und Ernte 128 kakteen.
+        rankLevel: Easy
+        type: onPlayer
+        requiredItems: 81:128
+        resetInHours: 1
+        displayItem: 81
+        takeItems: true
+        itemReward: 12:2 82:5
+        rewardText: 2 Sand und 5 Lehm (Bloecke)
+        currencyReward: 15
+        xpReward: 30
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: '12:1'
+        repeatRewardText: 1 Sand
+        repeatCurrencyReward: 15
+        repeatXpReward: 30
+      potatofarmer:
+        description: Baue eine Kartoffelfarm und ernte 128 Kartoffeln.
+        rankLevel: Easy
+        type: onPlayer
+        requiredItems: 392:128
+        resetInHours: 1
+        takeItems: true
+        itemReward: 3:4 82:5
+        rewardText: 4 Erde und 5 Lehm (Bloecke)
+        currencyReward: 15
+        xpReward: 30
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: '3:1'
+        repeatRewardText: 1 Erde
+        repeatCurrencyReward: 15
+        repeatXpReward: 15
+      carrotfarmer:
+        description: Baue eine Karottenfarm und ernte 128 Karotten.
+        rankLevel: Easy
+        type: onPlayer
+        requiredItems: 391:128
+        resetInHours: 1
+        takeItems: true
+        itemReward: 3:4 82:5
+        rewardText: 4 Erde und 5 Lehm (Bloecke)
+        currencyReward: 15
+        xpReward: 30
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: '3:1'
+        repeatRewardText: 1 Erde
+        repeatCurrencyReward: 15
+        repeatXpReward: 30
+      sugarfarmer:
+        description: Baue eine Zuckerrohrfarm und verarbeite 128 Zucker.
+        rankLevel: Easy
+        type: onPlayer
+        requiredItems: 353:128
+        resetInHours: 1
+        displayItem: 338
+        takeItems: true
+        itemReward: 3:2 82:5
+        rewardText: 2 Erde und 5 Lehm (Bloecke)
+        currencyReward: 15
+        xpReward: 30
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: '82:2'
+        repeatRewardText: 2 Lehm (Bloecke)
+        repeatCurrencyReward: 15
+        repeatXpReward: 10
+      melonfarmer:
+        description: Baue eine Melonenfarm und Ernte 256 Melonen.
+        rankLevel: Easy
+        type: onPlayer
+        requiredItems: 360:256
+        displayItem: 360
+        resetInHours: 1
+        takeItems: true
+        itemReward: '3:2'
+        rewardText: 2 Erde
+        currencyReward: 15
+        xpReward: 30
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: '3:1'
+        repeatRewardText: 1 Erde
+        repeatCurrencyReward: 5
+        repeatXpReward: 10
+      pumpkinfarmer:
+        description: Baue eine Kuerbisfarm und Ernte 128 Kuerbisse.
+        rankLevel: Easy
+        type: onPlayer
+        requiredItems: 86:128
+        displayItem: 86
+        resetInHours: 1
+        takeItems: true
+        itemReward: '3:4'
+        rewardText: 4 Erde
+        currencyReward: 15
+        xpReward: 30
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: '3:2'
+        repeatRewardText: 2 Erde
+        repeatCurrencyReward: 15
+        repeatXpReward: 30
+      shroompicker:
+        description: Baue eine Pilzfarm und Sammel 64 rote und 64 braune Pilze.
+        rankLevel: Easy
+        type: onPlayer
+        requiredItems: 39:64 40:64
+        displayItem: 40
+        resetInHours: 1
+        takeItems: true
+        itemReward: '110:4'
+        rewardText: 4 Mycel
+        currencyReward: 30
+        xpReward: 50
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: '110:1'
+        repeatRewardText: 1 Mycel
+        repeatCurrencyReward: 15
+        repeatXpReward: 30
+      novicebuilder:
+        description: Erreiche Island Level 20 (/island level).
+        rankLevel: Easy
+        type: islandLevel
+        requiredItems: 20
+        takeItems: false
+        itemReward: 257:4 258:4
+        rewardText: 4 Eisenspitzhacke und 4 Eisenaxt
+        currencyReward: 50
+        xpReward: 50
+        permissionReward: none
+        repeatable: false
+        repeatItemReward: 3:1
+        repeatRewardText: 'Test'
+        repeatCurrencyReward: 5
+        repeatXpReward: 5
+      monsterslayer:
+        description: Toete Monster und sammel 64 Verrottetes Fleisch, 32 Knochen, 32 Faeden, 32 Pfeile, 16 Schwarzpulver und 5 Spinnenaugen.
+        rankLevel: Medium
+        type: onPlayer
+        requiredItems: 367:64 287:32 289:16 262:32 352:32 375:5
+        displayItem: 367
+        resetInHours: 1
+        takeItems: true
+        itemReward: 331:16 15:5 318:1 49:4
+        rewardText: 16 Redstone, 1 Feuerstein und 4 Obsidian
+        currencyReward: 75
+        xpReward: 75
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: 331:2 15:1 318:1 49:5
+        repeatRewardText: 2 Redstone, 1 Feuerstein und 1 Obsidian 5 Eisenerz (Block)
+        repeatCurrencyReward: 20
+        repeatXpReward: 20
+      expertfarmer:
+        description: Ernte "jeweils 256" der folgenden Sachen Kartoffeln, Karotten, Kuerbisse, Melonen, Weizen und Zucker
+        rankLevel: Medium
+        type: onPlayer
+        requiredItems: 360:256 353:256 296:256 392:256 391:256 86:256
+        resetInHours: 1
+        displayItem: 60
+        takeItems: true
+        itemReward: 331:16 351:3:1 383:90:1 383:92:1 383:93:1
+        rewardText: 16 Redstone, 1 Kakaobohne, je 1 Spawn Ei(Huhn, Kuh und Schwein)
+        currencyReward: 100
+        xpReward: 100
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: 351:3:1 383:90:1 383:92:1 383:93:1
+        repeatRewardText: 1 Kakaobohne,  je 1 Spawn Ei(Huhn, Kuh und Schwein)
+        repeatCurrencyReward: 50
+        repeatXpReward: 50
+      goldenfood:
+        description: Sammel und erstelle 128 NORMALE Goldene Aepfel, 64 Goldene Karotten!
+        rankLevel: Medium
+        type: onPlayer
+        requiredItems: 322:128 396:64
+        resetInHours: 1
+        takeItems: true
+        itemReward: 20:64 383:91:1 351:15
+        rewardText: 64 Glas, 1 Schaf Spawne Ei, 15 Tintensack (schwarz)
+        currencyReward: 75
+        xpReward: 75
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: 1232
+        repeatRewardText: 20 Glas
+        repeatCurrencyReward: 50
+        repeatXpReward: 75
+      fisherman:
+        description: Fange Fische und Koche 100 Stueck! 50 Gebratener Fisch und 50 Gebratener Lachs!
+        rankLevel: Medium
+        type: onPlayer
+        requiredItems: '350:50 350:1:50'
+        resetInHours: 1
+        displayItem: 349
+        takeItems: true
+        itemReward: 331:16 15:5 351:15
+        rewardText: 16 Redstone, 15 Tintensack (schwarz), 5 Eisenerz (Bloecke)
+        currencyReward: 10
+        xpReward: 75
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: 331:2 15:1 351:1
+        repeatRewardText: 2 Redstone, 1 Tintensack (schwarz), 1 Eisenerz (Block)
+        repeatCurrencyReward: 15
+        repeatXpReward: 30
+      advanceapple:
+        description: Sammel 100 Aepfel!
+        rankLevel: Medium
+        type: onPlayer
+        requiredItems: 260:100
+        resetInHours: 1
+        takeItems: true
+        itemReward: 20:64 12:32 15:5 351:15
+        rewardText: 64 Glas, 64 Sand, 15 Tintensack (schwarz), 5 Eisenerz (Bloecke)
+        currencyReward: 100
+        xpReward: 75
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: 20:16 15:1 351:1
+        repeatRewardText: 16 Glas, 1 Tintensack (schwarz), 1 Eisenerz (Block)
+        repeatCurrencyReward: 40
+        repeatXpReward: 50
+      lumberjack:
+        description: Sammel "jeweils 64" Eiche, Birke, Dschungel und Fichtenholz!
+        rankLevel: Medium
+        type: onPlayer
+        requiredItems: 17:0:64 17:1:64 17:2:64 17:3:64
+        resetInHours: 1
+        displayItem: 17
+        takeItems: true
+        itemReward: 331:16 341:10 15:5 383:95:1
+        rewardText: 2 Redstone, 10 Slimebaelle, 1 Wolf Spawn Ei, 1 Eisenerz (Block)
+        currencyReward: 75
+        xpReward: 75
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: 331:2 15:1
+        repeatRewardText: 2 Redstone, 1 Eisenerz (Block)
+        repeatCurrencyReward: 20
+        repeatXpReward: 30
+      cookielover:
+        description: Erstelle 640 kekse und 1 Eimer Milch.
+        rankLevel: Medium
+        type: onPlayer
+        requiredItems: 335:1 357:640
+        resetInHours: 1
+        displayItem: 357
+        takeItems: true
+        itemReward: 331:16 341:10
+        rewardText: 16 Redstone, 10 Slimebaelle
+        currencyReward: 75
+        xpReward: 75
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: 331:20 341:5
+        repeatRewardText: 20 Redstone, 5 Slimebaelle
+        repeatCurrencyReward: 30
+        repeatXpReward: 50
+      adeptbuilder:
+        description: Erreiche Island Level 100 (/island level).
+        rankLevel: Medium
+        type: islandLevel
+        requiredItems: 100
+        takeItems: false
+        itemReward: '49:12'
+        rewardText: 12 Obsidian Bloecke
+        currencyReward: 100
+        xpReward: 100
+        permissionReward: none
+        repeatable: false
+        repeatItemReward: ''
+        repeatRewardText: ''
+        repeatCurrencyReward: 0
+        repeatXpReward: 0
+      homeowner:
+        description: Baue 1 Haus, das mindestens 1 Holztuer, 1 Bett, 1 Buecherregal, 1 Werkbank, 1 Ofen, 1Glasfenster (Block) und 1 Fackel hat.
+        rankLevel: Medium
+        type: onIsland
+        requiredItems: 26:1 58:1 20:1 64:1 61:1 47:1 50:1
+        takeItems: false
+        itemReward: 84:1 2267:1 22:10
+        rewardText: 1 Plattenspieler, 1 Schallplatte (wait), 10 Lapislazuli Bloecke
+        currencyReward: 100
+        xpReward: 100
+        permissionReward: none
+        repeatable: false
+        repeatItemReward: ''
+        repeatRewardText: ''
+        repeatCurrencyReward: 0
+        repeatXpReward: 0
+      netherportal:
+        description: Erstelle 1 netherportal und Aktiviere es! (kein zugang moeglich!)
+        rankLevel: Hard
+        type: onIsland
+        requiredItems: 49:10 90:1
+        takeItems: false
+        itemReward: '276:1'
+        rewardText: 1 Diamant Schwert
+        currencyReward: 300
+        xpReward: 300
+        permissionReward: none
+        repeatable: false
+        repeatItemReward: ''
+        repeatRewardText: ''
+        repeatCurrencyReward: 0
+        repeatXpReward: 0
+      pearlcollector:
+        description: Sammel 60 Enderperlen von Enderman´s
+        rankLevel: Hard
+        type: onPlayer
+        requiredItems: 368:60
+        resetInHours: 2
+        displayItem: 368
+        takeItems: true
+        itemReward: 341:20 369:3
+        rewardText: 20 Slimebaelle und 3 Lohenrute
+        currencyReward: 50
+        xpReward: 300
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: 341:1 369:1
+        repeatRewardText: 1 Slimebaelle und 1 Lohenrute
+        repeatCurrencyReward: 25
+        repeatXpReward: 150
+      slimefarmer:
+        description: Sammel 50 Slimebaelle von Slimes!
+        rankLevel: Hard
+        type: onPlayer
+        requiredItems: '341:50'
+        resetInHours: 1
+        displayItem: 341
+        takeItems: true
+        itemReward: 264:32 388:30
+        rewardText: 32 Diamanten und 30 Smaragde
+        currencyReward: 100
+        xpReward: 100
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: '331:8'
+        repeatRewardText: 8 Redstone
+        repeatCurrencyReward: 50
+        repeatXpReward: 100
+      baker:
+        description: Backe 10 Kuchen und 10 Kuerbiskuchen!
+        rankLevel: Hard
+        type: onPlayer
+        requiredItems: 354:10 400:10
+        resetInHours: 1
+        displayItem: 354
+        takeItems: true
+        itemReward: 341:5 264:45
+        rewardText: 5 Slimebaelle und 45 Diamant
+        currencyReward: 50
+        xpReward: 100
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: '341:1 264:1'
+        repeatRewardText: 1 Slimeball und 1 Diamant
+        repeatCurrencyReward: 30
+        repeatXpReward: 100
+      explorer:
+        description: Erstelle 1 leere Karte (NICHT benutzen), 1 Kompass, 1 Uhr und sammel 64 Nethersteine, 16 Soulsand und 1 Ghasttraene.
+        rankLevel: Hard
+        type: onPlayer
+        requiredItems: 87:64 88:16 370:1 395:1 345:1 347:1
+        resetInHours: 1
+        displayItem: 370
+        takeItems: true
+        itemReward: 27:32 66:128 341:5 383:100:1
+        rewardText: 128 Schienen , 32 Antriebsschienen, 1 Pferde Spawn Ei, 5 Slimebaelle
+        currencyReward: 100
+        xpReward: 500
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: 66:5 27:1
+        repeatRewardText: 5 Schienen und 1 Antriebsschiene
+        repeatCurrencyReward: 25
+        repeatXpReward: 100
+      expertbuilder:
+        description: Erreiche Island level 250 (/island level).
+        rankLevel: Hard
+        type: islandLevel
+        requiredItems: 250
+        takeItems: false
+        itemReward: 264:1 3:20 12:320
+        rewardText: 1 Diamant, 20 Erde und 320 Sand
+        currencyReward: 150
+        xpReward: 150
+        permissionReward: none
+        repeatable: false
+        repeatItemReward: ''
+        repeatRewardText: ''
+        repeatCurrencyReward: 0
+        repeatXpReward: 0
+      woolcollector:
+        description: Sammel 128 von "jeder" Wollefarbe!
+        rankLevel: Master
+        type: onPlayer
+        requiredItems: 35:0:128 35:1:128 35:2:128 35:3:128 35:4:128 35:5:128 35:6:128 35:7:128 35:8:128 35:9:128 35:10:128 35:11:128 35:12:128 35:13:128 35:14:128 35:15:128
+        resetInHours: 1
+        displayItem: 35
+        takeItems: true
+        itemReward: 264:5 2262:1 2263:1 2261:1 383:96:1 388:5
+        rewardText: 5 Diamanten, 5 Smaragde, 3 Schallplatten (mellohi, stal, strad), 1 Pilzkuh Spawn Ei
+        currencyReward: 200
+        xpReward: 200
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: 388:1 383:96:1
+        repeatRewardText: 1 Smaragd und 1 Pilzkuh Spawn Ei
+        repeatCurrencyReward: 100
+        repeatXpReward: 500
+      glassmaker:
+        description: Erstelle 20 Glasscheiben von jeder Farbe!
+        rankLevel: Master
+        type: onPlayer
+        requiredItems: 160:0:20 160:1:20 160:2:20 160:3:20 160:4:20 160:5:20 160:6:20 160:7:20 160:8:20 160:9:20 160:10:20 160:11:20 160:12:20 160:13:20 160:14:20 160:15:20
+        resetInHours: 10
+        displayItem: 95
+        takeItems: true
+        itemReward: 174:120 419:2 264:64 383:91:2 383:92:2 383:95:1 383:96:1 383:100:1
+        rewardText: 128 Packeis, 2 Dia Pferde Ruestung und 1 Pferd, 64 Diamanten, je 2 Spawnei von Schaf-Kuh-Wolf-Pilzkuh.
+        currencyReward: 400
+        xpReward: 1000
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: 174:64 419:1 264:64 383:91:1 383:92:1 383:95:1 383:96:1 383:100:1
+        repeatRewardText: 64 Packeis, 1 Dia Pferde Ruestung und 1 Pferd, 64 Diamanten, je 1 Spawnei von Schaf-Kuh-Wolf-Pilzkuh.
+        repeatCurrencyReward: 200
+        repeatXpReward: 500
+      masterfarmer:
+        description: Sammel je 256 Stück von Melonen Bloecken, Zucker, Weizen, Kartoffeln, Karotten, Kuerbis, Kaktus und 128 Goldene Karotten!
+        rankLevel: Master
+        type: onPlayer
+        requiredItems: 103:256 353:256 296:256 392:256 391:256 86:256 81:256 396:128
+        displayItem: 293
+        takeItems: true
+        resetInHours: 10
+        itemReward: 12:256 388:64 98:1:128 98:2:128 98:3:128
+        rewardText: 256 Sand, 64 Smaragde und je 128 Bemooster-Rissiger-Gemeißelter Steinziegel
+        currencyReward: 1000
+        xpReward: 1500
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: 12:128 388:18 98:1:64 98:2:64 98:3:64
+        repeatRewardText: 128 Sand, 18 Smaragde und je 64 Bemooster-Rissiger-Gemeißelter Steinziegel
+        repeatCurrencyReward: 200
+        repeatXpReward: 500
+      maestro:
+        description: Erstelle eine Plattenspieler und sammel ALLE Schallplatten je 2 mal!
+        rankLevel: Master
+        type: onPlayer
+        requiredItems: 2256:2 2257:2 2258:2 2259:2 2260:2 2261:2 2262:2 2263:2 2264:2 2265:2 2266:2 2267:2 84:1
+        resetInHours: 24
+        displayItem: 2256
+        takeItems: true
+        itemReward: 419:1 341:128 384:128
+        rewardText: 1 Diamant Pferde Ruestung, 128 Slimebaelle und 128 EXP Flaschen
+        currencyReward: 100
+        xpReward: 200
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: 384:64 419:1
+        repeatRewardText: 1 Diamant Pferde Ruestung und 64 EXP Flaschen
+        repeatCurrencyReward: 50
+        repeatXpReward: 100
+      emeraldcollector:
+        description: Sammel 256 Smaragde.
+        rankLevel: Master
+        type: onPlayer
+        requiredItems: 388:256
+        resetInHours: 6
+        displayItem: 388
+        takeItems: true
+        itemReward: 329:3 351:5:2 351:6:2 351:9:2 351:13:2 351:14:2
+        rewardText: 3 Sattel und je 2 Farben von (Violett, Tuerkis, Rosa,Magenta und Orange)
+        currencyReward: 200
+        xpReward: 200
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: 329:3 351:5:2 351:6:2 351:9:2 351:13:2 351:14:2
+        repeatRewardText: 3 Sattel und je 2 Farben von (Violett, Tuerkis, Rosa,Magenta und Orange)
+        repeatCurrencyReward: 200
+        repeatXpReward: 200
+      topchef:
+        description: Erstelle je 3 von jedem essbaren (NICHT Rohes Fleisch, Verrottetes Fleisch oder Goldene Aepfel)
+        rankLevel: Master
+        type: onPlayer
+        requiredItems: 393:3 297:3 354:3 366:3 350:3 320:3 357:3 282:3 400:3 364:3
+        resetInHours: 12
+        displayItem: 391
+        takeItems: true
+        itemReward: 264:2 2257:1 2258:1 2260:1 383:96:1 388:5
+        rewardText: 2 Diamanten, 3 Schallplatten (cat, blocks, far), 1 Pilzkuh Spawn Ei, und 5 Smaragde
+        currencyReward: 200
+        xpReward: 200
+        permissionReward: none
+        repeatable: true
+        repeatItemReward: 266:1 383:96:1 388:1
+        repeatRewardText: 1 Goldbarren, 1 Pilzkuh Spawn Ei, 1 Smaragd
+        repeatCurrencyReward: 20
+        repeatXpReward: 20
+      skylord:
+        description: Erreiche das Island hoechst level von 1000
+        rankLevel: Master
+        type: islandLevel
+        requiredItems: 1000
+        takeItems: false
+        itemReward: 264:64 120:12 381:12 138:1 384:256
+        rewardText: '64 Diamanten, 1 Leuchtfeuer, 4 stacks EXP Flaschen, 12 Endportalrahmen, 12 Enderaugen (Endrahmen NUR einmal bekommbar) , &eTitle: &a[&2SkyLord&4+&a]&f'
+        currencyReward: 1000
+        xpReward: 10000
+        permissionReward: none
+        repeatable: false
+        repeatItemReward: ''
+        repeatRewardText: ''
+        repeatCurrencyReward: 0
+        repeatXpReward: 0
+      ultimateskylord:
+        description: Erreiche das Island hoechst level von XXXXXX
+        rankLevel: Master
+        type: islandLevel
+        requiredItems: 999999
+        takeItems: false
+        itemReward:
+        rewardText:
+        currencyReward: 5000
+        xpReward: 10000
+        permissionReward: none
+        repeatable: false
+        repeatItemReward: ''
+        repeatRewardText: ''
+        repeatCurrencyReward: 0
+        repeatXpReward: 0
